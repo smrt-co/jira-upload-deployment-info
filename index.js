@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const url_1 = require("url");
 const core = require('@actions/core');
 const github = require('@actions/github');
-const {request} = require('request-promise-native');
+const request = require('request-promise-native');
 const dateFormat = require('dateformat');
 const token = require('@highwaythree/jira-github-actions-common');
 
