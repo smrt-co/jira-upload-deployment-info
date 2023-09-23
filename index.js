@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const {url_1} = require("url");
-const {core} = require('@actions/core');
-const {github} = require('@actions/github');
+const url_1 = require("url");
+const core = require('@actions/core');
+const github = require('@actions/github');
 const {request} = require('request-promise-native');
-const {dateFormat} = require('dateformat');
-const {token} = require('@highwaythree/jira-github-actions-common');
+const dateFormat = require('dateformat');
+const token = require('@highwaythree/jira-github-actions-common');
 
-const {os} = require("os");
-const {fs} = require("fs");
+const os = require("os");
+const fs = require("fs");
 
 function setOutput(key, value) {
   // Temporary hack until core actions library catches up with github new recommendations
