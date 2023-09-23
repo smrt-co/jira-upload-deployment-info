@@ -111,6 +111,7 @@ exports.submitDeploymentInfo = submitDeploymentInfo;
         // console.log("finished submitting deployment info");
     }
     catch (error) {
-        core.setFailed(error.message);
+        console.error(error);
+        core.setFailed(error.message ? error.message : 'error in the jira upload deployment');
     }
 })();
